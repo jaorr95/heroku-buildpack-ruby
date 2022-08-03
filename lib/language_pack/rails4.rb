@@ -65,7 +65,8 @@ WARNING
         puts "Detected manifest file, assuming assets were compiled locally"
         return true
       end
-
+      
+      puts "3 doritos despues"
       precompile = rake.task("assets:precompile")
       return true if precompile.not_defined?
 
