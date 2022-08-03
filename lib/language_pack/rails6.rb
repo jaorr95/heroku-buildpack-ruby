@@ -14,6 +14,7 @@ class LanguagePack::Rails6 < LanguagePack::Rails5
 
   def compile
     FileUtils.mkdir_p("tmp/pids")
+    puts "Estoy en rails 6"
     super
   end
 end
