@@ -164,6 +164,7 @@ PROCESSES
   # log output
   # Ex. log "some_message", "here", :someattr="value"
   def log(*args)
+    puts "Estoy en log de base.rb"
     args.concat [:id => @id]
     args.concat [:framework => self.class.to_s.split("::").last.downcase]
 
