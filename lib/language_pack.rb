@@ -15,7 +15,8 @@ module LanguagePack
     pack = [ NoLockfile, Rails7, Rails6, Rails5, Rails42, Rails41, Rails4, Rails3, Rails2, Rack, Ruby ].detect do |klass|
       klass.use?
     end
-
+    puts "Esta es la version del pack"
+    puts pack
     return pack ? pack.new(*args) : nil
   end
 end
